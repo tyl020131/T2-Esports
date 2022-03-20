@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Register | G1 Technology</title>
+    <link href="../template/template.css" rel="stylesheet" type="text/css">
+    <link href="register.css" rel="stylesheet" type="text/css">
+    <link href="../template/logoicon.ico" rel="icon" type="image/gif">
+    <script src="https://kit.fontawesome.com/bfaf04eb16.js" crossorigin="anonymous"></script>
+    <script src="register.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <!--Top-->
+    <div class="top">
+        <img src="../template/companyLogo.jpg" class="logo">   
+        <div class="searchbar-container">
+            <input type="text" class="searchbar" style="color: white;" placeholder="Enter Your Search">    
+            <i class="fas fa-search" id="icon1"></i>                 
+        </div>    
+    </div>
+    <!--Navigation Bar-->
+    <div class="navigation">
+        <nav class="header">
+            <div class="goright"></div>
+            <ul class="mainList">
+                <li  class="mainli"><a href="../home/homepage.html">G1 TECH</a></li>
+                <li class="mainli">
+                    <ul class="pages">
+                        <li><a href="../aboutus/aboutUs.html">ABOUT US</a></li>
+                        <li><a href="../products/products.html" class="product">PRODUCTS</a></li>
+                        <li><a href="../support/support.html">SUPPORT</a></li>
+                    </ul>
+                </li>
+                <li class="mainli">
+                    <ul class="loginCart">
+                        <li class="login"  ><a href="../login/login.html" id="login" >LOGIN/REGISTER</a></li>  
+                        <li><a href="../cart/cart.html" id="icon2"><i class="fas fa-shopping-cart" id="icon2"></i> </a></li>  
+                    </ul>  
+                </li>
+            </ul>
+            <div class="goleft"></div>
+        </nav> 
+    </div>
+    <!--Page Content-->
+    <div class="form">
+        <!--registration form start-->
+        <form class="registration-form"  >
+          <h2>Registration</h2>
+          <div class="icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div class="input-box">
+          <input type="text" name="username" id="username" value="" placeholder="Username" required>      
+          <input type="password" name="password" id="password" value="" placeholder="Password"required>        
+          <input type="password" name="Cpassword" id="Cpassword" value="" placeholder="Password Confirmation" required>
+          <input type="email" name="email" id="email" value="" placeholder="Email"  required>
+          <input type="text" name="tel" id="tel" value="" placeholder="Contact Number"  required>
+          <br/>
+          <input type="checkbox" id="agreements" name="agreements">
+          <label for="agreements">I agree with all the <a style="text-decoration: none; color: red;" href="../TnC/TnC.html">TERMS & CONDITIONS</a>.</label>
+          <br/><br/>
+          <button type="button" name="button" onclick="return validation();">Register</button>
+        </form>
+        <script src="../template/temp.js" type="text/javascript"></script>
+        <!--login form end-->
+    </div>
+      <!--form area end-->
+    <!--Footer-->
+    <footer id="footer">
+        <div class="aboutUs-section" id="aboutUs-section">
+            <h1 >About G1 Technology</h1>
+            <p1>
+                COMMITTED TO PEOPLE. COMMITTED TO FUTURE.<br>
+                WE ARE PROVIDING THE BEST TECHNOLOGY TO CONSUMER.<br>
+                CHOOSE US! THE FUTURE IS HERE!
+            </p1>
+    
+            <h2>Contact us?</h2>
+            <p2>
+                Phone NO : <a href="tel:012-3456789">012-3456789</a><br>
+                Email : <a href="mailto:info@g1technology.com">info@g1technology.com</a>
+            </p2>
+        </div>
+    
+        <div class="quickMenu-section" id="quickMenu-section">
+            <h1>Quick Menu</h1>
+            <ul>
+                <li><a href="../aboutus/aboutUs.html">About Us</a></li>
+                <li><a href="../products/products.html">Products</a></li>
+                <li><a href="../support/support.html">Support</a></li>
+            </ul>
+    
+        </div>
+    
+        <div class="locateUs-section" id="locateUs-section">
+            <h1>Locate Us</h1>
+            <address>
+                2270 Rowes Lane,<br>Owensboro,<br>42301 Kentucky,<br>California.
+            </address>
+        </div>
+    
+        <div class="footer-bottom" id="footer-bottom">
+            <p>&copy;www.g1technology.com || DESIGNED BY 1DIA1 GROUP 1</p>
+        </div>
+    </footer>
+    <script src="../template/searchbar.js"></script>
+    <script src="../template/temp.js"></script>
+</body>
+</html>

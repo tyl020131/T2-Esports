@@ -1,0 +1,73 @@
+.container{
+    display:flex;
+}
+.bigpreview{
+    border:3px solid white;
+    width:450px;
+    height:350px;
+    margin-left:100px;
+    margin-top:100px;
+}
+.bigpreview img{
+    width:400px;
+    height:400px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.info{
+    margin-left:100px;
+    margin-top:100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:350px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+.info h1{
+    color:rgb(77, 135, 201);
+}
+
+.info p{
+    color: skyblue;
+}
+.smallpreview{
+    width:450px;
+    display:flex;
+    justify-content: space-between;
+    margin-left:100px;
+    margin-top:100px;
+}
+
+.smallpreview div{
+    border:3px solid white;
+    width:100px;
+    height:100px;
+}
+.smallpreview div:nth-child(1){
+    border-color:aqua;
+}
+.smallpreview img{
+    width:100px;
+    height:100px;
+}
+.smallpreview img:hover{
+    cursor:pointer;
+}
+
+.addToCart {
+    float: right;
+    margin-right:50px;
+    margin-top:-100px;
+}
+
+.addToCart button {
+    
+    outline: none;
+    cursor: pointer;
+    width: 500px;
+    height:100px;
+    background-color: rgb(78, 207, 207);
+    color: white;
+    
+}

@@ -1,0 +1,43 @@
+@font-face{
+    font-family: 'Exo2';
+    src: url(font/Exo2-Italic-VariableFont_wght.ttf);
+    src: url(font/Exo2-VariableFont_wght.ttf);
+    
+}
+@font-face{
+    font-family: 'Acme';
+    src: url(font/Acme-Regular.ttf);
+}
+h1#tnc {
+    color: white;
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Acme','Gill Sans', 'Gill Sans MT', Calibri;
+    margin-top: 15px;
+    text-shadow: 3px 3px rgb(105, 99, 99);
+}
+
+h2{
+    color: white;
+}
+
+blockquote{
+    color: white;
+    font-family: 'Exo2',sans-serif;
+}
+
+h3{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+span#welcome{
+    font-size: 17px;
+}
+
+#mail{
+    color: #0087dc;
+}

@@ -1,0 +1,56 @@
+/*supportNav*/
+.supportNav {
+    background-color: rgb(202, 199, 199);
+    box-shadow: 6px 6px 10px rgba(145, 145, 145, 0.938);
+    width: 1100px ;
+    height: 70px;
+    margin: auto;
+    margin-top: 5em;
+    border-radius: 1em;
+}
+
+.supportNav li{
+    width: 221px; 
+    height: 43px;
+    list-style-type: none;
+    float: left;
+    margin: -30px 50px 0px 50px;
+    display: block;
+    background-color: rgb(153, 154, 226);
+    text-align: center;
+    padding: 15px 12px ;
+    outline-style: solid;
+    outline-color: white;
+}
+
+.supportNav li a{
+    font-family: Bernard MT Condensed;
+    color: white;
+    text-decoration: none;
+    transition: all 0.25s ;
+    font-size: 2.5em;
+}
+
+
+.supportNav li a:hover{
+    color:rgb(5, 255, 243);
+    font-weight: bold;
+    font-size: 2.7em;
+}
+
+.supportNav #current {
+    background-color: rgb(246, 255, 255);
+    outline-style: solid;
+    outline-color: rgb(136, 136, 212);
+    width: 221px; 
+    height: 43px;
+    display: block;
+}
+
+.supportNav #current a{
+    color: rgb(136, 136, 212);
+}
+
+.supportNav #current a:hover{
+    color: royalblue;
+}

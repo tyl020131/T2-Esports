@@ -1,0 +1,300 @@
+/* web page template */
+/*body*/
+html{
+    background-image: url(background.jpg);
+    height: 100%;
+}
+ body {
+    margin: 0px;;
+    margin-left: auto;
+    margin-right: auto;
+    width:1200px;
+    background-color: black;  
+}
+/*top*/
+div.top{
+    height:200px;
+    display:flex;
+    justify-content: space-between;
+    position:relative;
+}
+/*logo*/ 
+div.top .logo{
+    width:200px;
+    height:auto;
+}
+/*searchbar*/
+div.top .searchbar-container {
+    box-sizing: border-box;
+    width:200px;
+    height:45px;
+    border:3px solid white;
+    margin-top:120px;
+    margin-right:50px;
+    border-radius: 20px;;
+    padding-top: 10px;
+    padding-bottom: 10px;;
+    text-align: center;   
+    display:flex;
+    align-items: center;
+    z-index:4;
+}
+.searchbar-container .searchbar{
+    background-color: black;
+    outline: none;
+    border-style: none;
+    width:130px;
+    color:white;
+    margin-left:20px;
+    text-align:center;
+}
+/*search icon*/
+.searchbar-container #icon1{
+    margin-left:3px;
+    color:white;
+    border-radius:50%;
+    padding:11px;
+    transition:background-color 0.4s linear,color 0.4s linear;  
+}
+#icon1:hover{
+    cursor:pointer;
+    color:black;
+    background-color:red;
+}
+.searchresult{
+    position:absolute;
+    right:63px;
+    top:163px;
+    z-index:3;
+}
+.searchresult a{
+    text-decoration:none;
+    
+}
+.searchresult div{
+    box-sizing: border-box;
+    color:white;
+    height:50px;
+    width:175px;
+    border-left:3px solid #0087dc;
+    border-right:3px solid #0087dc;
+    border-bottom:3px solid #0087dc;
+    text-align:center;
+    background-color:black;
+    padding-top:15px;;
+    font-size:20px;
+    font-family:bebas neue;
+    
+
+}
+.searchresult div:hover{
+    color:black;
+    cursor:pointer;
+    background-color:#0087dc;
+}
+/*navigation bar*/
+.navigation{
+    position:sticky;
+    top:0px;
+    overflow:hidden;
+    z-index:2;
+    
+    
+}
+nav.header {
+    box-sizing: border-box;
+    width:100%;
+    height:56px;
+    background-color: black;
+    border-bottom:3px solid #0087dc;
+    border-top:3px solid #0087dc;
+    
+}
+nav.header li{
+    list-style: none;
+}
+nav.header ul.mainList{
+    display: flex;
+    justify-content: space-between;
+    margin-left:10px;
+}
+nav.header ul.pages{
+    display:flex;
+    justify-content: space-between;
+    width:450px;
+    margin-left:50px;
+}
+nav.header ul.loginCart{
+    display:flex;
+    justify-content: space-between;
+    width:200px;
+    margin-right:50px;
+}
+nav.header a{
+    color:white;
+    text-decoration:none;
+    box-sizing:border-box;
+    width:30px;
+    padding:5px 15px;
+    border-radius:20px;
+    font-family: 'Rubik', sans-serif;
+    transition:background-color 0.2s linear,color 0.25s linear;
+}
+nav.header a:hover{
+    background-color:#0087dc;
+    color:black;
+    
+}
+#icon2:hover{
+    background-color:black;
+    color:#0087dc;
+}
+.goright{
+    background-color:aqua;
+    width:1200px;
+    height:3px;
+    margin-top:-3px;
+    position:absolute;
+    animation:right 6s infinite;
+    left:-1200px;;
+    
+}
+.goleft{
+    background-color:aqua;
+    width:1200px;
+    height:3px;
+    position:absolute;
+    margin-top:-1.0px;
+    animation:left 6s infinite;
+    right:0px;
+}
+.login a{
+    font-family:montserrat;
+}
+@keyframes right{
+    0%{left:-1200px}
+    50%{left:1300px;}
+    100%{left:-1300px}
+    
+}
+@keyframes left{
+    0%{right:-1200px}
+    50%{right:1300px;}
+    100%{right:-1300px}
+}
+@media only screen and (min-width: 3500px) {
+    .goleft,.goright{
+        visibility: hidden;
+    }
+}
+/*footer*/
+#footer{
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-image: url(imgFolder/footerbground.jpg);
+    background-size: 100%*100%;
+    border-style: ridge;
+    border-color: white ;
+    margin-top:100px;
+    clear: both;
+    display: flex;
+    box-sizing:border-box;
+}
+
+.aboutUs-section{
+    text-align: justify;
+    margin-left: 50px;
+    height:320px;
+    
+}
+
+.aboutUs-section h1, h2{
+    color: white;
+    font-family:'Montserrat', sans-serif;
+    
+}
+
+.aboutUs-section p1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.aboutUs-section p2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutUs-section p2 a{
+    text-decoration: none;
+    font-size: larger; 
+    color: brown;
+}
+.aboutUs-section p2 a:hover{
+    text-decoration:underline;
+}
+
+.quickMenu-section {
+    float: left;
+    width: 20%;
+    height: 80%;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.quickMenu-section h1{
+    color: white; 
+    font-family:'Montserrat', sans-serif;
+    margin-left: 30px;
+}
+
+.quickMenu-section a{
+    text-decoration: none;
+    font-weight: bold; 
+    font-size: larger; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+}
+.quickMenu-section a:hover{
+    text-decoration: underline;
+}
+
+.locateUs-section{
+    float: left;
+    width: 20%;
+    height: 80%;
+    text-align: justify;
+    margin-left: 80px;
+}
+
+.locateUs-section h1{
+    color: white; 
+    font-family:'Montserrat', sans-serif;
+    margin-left: 30px;
+    text-align:center;
+}
+
+.locateUs-section address{
+    color: white; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-style: italic; 
+    margin-left: 30px;
+    text-align:center
+}
+
+.footer-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    height: 40px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    color: black; 
+    font-family:'Montserrat', sans-serif;
+    font-weight: 900;
+}
+

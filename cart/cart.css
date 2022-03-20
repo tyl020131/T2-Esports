@@ -1,0 +1,176 @@
+/*Cart Text*/
+#text{
+    text-align:center;
+    font-size:50px;
+    color: deepskyblue;
+    margin-top:50px;
+    font-family: 'Krona One', sans-serif;
+    border:3px solid #0087dc;
+    width:650px;
+    margin:auto;
+    margin-top:35px;
+    margin-bottom:35px;
+    padding:10px 0px;
+}
+/*Label*/
+.label{
+    display:flex;
+    width:85%;
+    
+}
+.label p{
+    color:white;
+    font-family: 'Lexend Peta', sans-serif;
+}
+.label p:nth-child(1){
+    margin-left:120px;
+}
+.label p:nth-child(2){
+    margin-left:220px;
+}
+.label p:nth-child(3){
+    margin-left:85px;
+}
+.label p:nth-child(4){
+    margin-left:70px;
+}
+.label p:nth-child(5){
+    margin-left:55px;
+}
+/*Cart Container*/
+div.cart-container{
+    border-top:1px aqua solid;
+    background-color:black;
+    widows: 100%;
+    margin:auto;
+}
+div.cart-container div{
+    display:flex;
+    justify-content: space-between;
+
+}
+.cart-container div.products p{
+    color:white;
+    margin-top:50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+}
+.products p.productprice{
+    width:100px;
+    text-align:left;
+}
+div.products button{
+    width:100px;
+    height:30px;
+    border-radius:20px;
+    background-color: deepskyblue;
+    outline:none;
+    border:none;
+    margin-top:45px;
+    margin-right:50px;
+    transition:background-color 0.2s ease-in-out,color 0.25s ease-in-out;
+}
+div.products input{
+    height:20px;
+    text-align:center;
+    width:90px;
+    margin-top:49px;
+    background-color: greenyellow;
+    color:black;
+    outline: none;
+    border:none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+div.products div.imgdiv{
+    margin:15px;
+    width:310px;
+    height:310px;
+    border:2px solid #0087dc;
+}
+div.products img{
+    height:250px;
+    width:300px;
+    margin:auto;
+}
+.products p.productname{
+    width:200px;
+}
+.products p.totalprice{
+    width:100px;
+}
+.products button:hover{
+    cursor:pointer;
+    background-color:red;
+    
+}
+/*total*/
+div#total{
+    margin-top:40px;
+    border-top:1px solid aqua;
+    margin-bottom:100px;
+}
+#totaldetails{
+    float:right;
+    margin-right:150px;
+    margin-bottom:100px;
+}
+#totaldetails p,#totaldetails div{
+    color:white;
+}
+div.subtotal,div.sst,div.ship{
+    display:flex;
+}
+div.subtotal p:nth-child(1),div.sst p:nth-child(1),div.ship p:nth-child(1){
+    width:90px;;
+}
+
+#subtotal,#sst,#ship{
+    margin-left:50px;
+    align-self: flex-start;
+    width:150px;
+}
+#final{
+    position:relative;
+    left:100px;
+    border-top:2px dashed white;
+    border-bottom:2px dashed white;
+    width:120px;
+    padding:5px 0px;
+    padding-left:40px;
+    font-family: 'Do Hyeon', sans-serif;
+    
+}
+#totaldetails button{
+    margin-top:15px;
+    position:relative;
+    left:130px;
+    
+}
+#total p{
+    font-family: 'Do Hyeon', sans-serif;
+}
+#checkout{
+    background-color:green;
+    width:100px;
+    height:30px;
+    border-radius:20px;
+    outline:none;
+    border:none;
+    margin-top:45px;
+    margin-right:50px;
+    transition:background-color 0.2s ease-in-out,color 0.25s ease-in-out;
+    
+}
+#checkout:hover{
+    background-color:greenyellow;
+    cursor:pointer;
+}
+.productprice span{
+    color:red;
+}
+.productprice span:nth-child(1){
+    text-decoration:line-through;
+    color:white;
+}

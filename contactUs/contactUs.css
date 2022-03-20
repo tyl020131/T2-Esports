@@ -1,0 +1,118 @@
+/*Title style*/
+h1#contactTitle{
+    text-align: center;
+    font-size: 10em;
+    margin-top: 0px;
+    margin-bottom: 70px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: white;
+
+}
+
+/*Section style*/
+section{
+    font-size: 5em;
+    font-family: Gadugi;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+/*aside style*/
+aside{
+    float: right;
+    color: blue;
+    position: relative;
+    right: 30px;
+    width: 300px;
+    height: 280px;
+    background-color: burlywood;
+    border: 1px solid black;
+    padding: 0px 0px 0px 30px;
+    border-radius: 20px;
+}
+
+aside a{
+    text-decoration: none;
+}
+
+aside a:hover{
+    text-decoration: underline;
+}
+aside h2{
+    text-decoration: underline;
+    font-size: 3em;
+}
+
+aside li{
+    margin-left: -20px;
+    font-size: 20px;
+}
+
+/*Form style*/
+.container{
+    margin-left: 10px;
+}
+form input{
+   padding-left: 10px;
+   display: block;
+   float: left;
+   border-radius: 10px;
+}
+
+fieldset{
+    border: 0;
+    padding-bottom: 20px;
+}
+
+legend{
+    color: white;
+}
+
+/*Input style*/
+input#name{
+    width: 250px;
+    height: 40px;
+}
+
+input#email{
+    width:400px;
+    height: 40px;
+}
+
+input#tel{
+    width: 250px;
+    height: 40px;
+}
+
+input:focus{
+ background-color: rgba(194, 201, 204, 0.966);
+ color: rgb(38, 59, 121);
+}
+
+/*Textarea style*/
+fieldset#messagefield{
+  height: auto;
+}
+
+textarea{
+    border-radius: 10px;
+    padding: 8px;
+}
+
+/*button style*/
+input[type=submit],input[type=reset]{
+    width: 150px;
+    background-image: linear-gradient(green, yellow );
+    height: 50px;
+    border: 3px solid red;
+    box-shadow: 5px 5px 5px gray;
+    float: right;
+    margin-right: 30px;
+}
+
+
+#content {
+    padding-bottom: 50px;
+}
+

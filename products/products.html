@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Products | G1 Technology</title>
+    <link href="product.css" rel="stylesheet">
+    <link href="../template/template.css" rel="stylesheet" type="text/css">
+    <link href="../template/logoicon.ico" rel="icon" type="image/gif">
+    <script src="https://kit.fontawesome.com/bfaf04eb16.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <!--Top-->
+    <div class="top">
+        <img src="../template/companyLogo.jpg" class="logo">   
+        <div class="searchbar-container">
+            <input type="text" class="searchbar" style="color: white;" placeholder="Enter Your Search">    
+            <i class="fas fa-search" id="icon1"></i>                 
+        </div>    
+    </div>
+    <!--Navigation Bar-->
+    <div class="navigation">
+        <nav class="header">
+            <div class="goright"></div>
+            <ul class="mainList">
+                <li  class="mainli"><a href="../home/homepage.html">G1 TECH</a></li>
+                <li class="mainli">
+                    <ul class="pages">
+                        <li><a href="../aboutus/aboutUs.html">ABOUT US</a></li>
+                        <li><a href="../products/products.html" class="product">PRODUCTS</a></li>
+                        <li><a href="../support/support.html">SUPPORT</a></li>
+                    </ul>
+                </li>
+                <li class="mainli">
+                    <ul class="loginCart">
+                        <li class="login"  ><a href="../login/login.html" id="login" >LOGIN/REGISTER</a></li>  
+                        <li><a href="../cart/cart.html" id="icon2"><i class="fas fa-shopping-cart" id="icon2"></i> </a></li>  
+                    </ul>  
+                </li>
+            </ul>
+            <div class="goleft"></div>
+        </nav> 
+    </div>
+    <!--Page Content-->
+    <div class="topPromotion">
+        <a href="../promotions/promotions.html">
+            <img src="imgFolder/Promotion2.jpg" id="main" alt="1">
+            <img src="imgFolder/Promotionsmall.jpg" id="small" alt="2">
+            <img src="imgFolder/Promotionstrike.png" id="strike" onmouseover="zoomImg()" onmouseout="outImg()" alt="3">
+        </a>
+    </div>
+    <div class="typeOfProducts">
+        <p class="typeoftext">PRODUCTS</p>
+        <div class=category-container>
+            <div class="typecontainer"><a href="type/desktop.html"><div></div><img src="imgFolder/desktop.png" ><p>Desktop</p></a></div>
+            <div class="typecontainer"><a href="type/laptop.html"><div></div><img src="imgFolder/laptop.png"><p>Laptop</p></a></div>
+            <div class="typecontainer"><a href="type/accessories.html"><div></div><img src="imgFolder/accessories.png"><p>Accessories</p></a></div>
+        </div>
+    </div>
+
+    <div class="otherPromo">
+        <p class="other">OTHER PROMOTIONS</p>
+        <div class="poster">
+            <img src="imgFolder/smallpromo.jpg" usemap="#smallpromo">
+        </div>
+        <map name="smallpromo">
+            <area shape="rect" coords="0,0,580,382" href="../promotions/promotions.html" >
+            <area shape="rect" coords="581,0,1134,382" href="../promotions/promotions.html">
+        </map>
+      
+        
+    </div>   
+  
+    <!--Footer-->
+    <footer id="footer">
+        <div class="aboutUs-section" id="aboutUs-section">
+            <h1 >About G1 Technology</h1>
+            <p1>
+                COMMITTED TO PEOPLE. COMMITTED TO FUTURE.<br>
+                WE ARE PROVIDING THE BEST TECHNOLOGY TO CONSUMER.<br>
+                CHOOSE US! THE FUTURE IS HERE!
+            </p1>
+    
+            <h2>Contact us?</h2>
+            <p2>
+                Phone NO : <a href="tel:012-3456789">012-3456789</a><br>
+                Email : <a href="mailto:info@g1technology.com">info@g1technology.com</a>
+            </p2>
+        </div>
+    
+        <div class="quickMenu-section" id="quickMenu-section">
+            <h1>Quick Menu</h1>
+            <ul>
+                <li><a href="../aboutus/aboutUs.html">About Us</a></li>
+                <li><a href="../products/products.html">Products</a></li>
+                <li><a href="../support/support.html">Support</a></li>
+            </ul>
+    
+        </div>
+    
+        <div class="locateUs-section" id="locateUs-section">
+            <h1>Locate Us</h1>
+            <address>
+                2270 Rowes Lane,<br>Owensboro,<br>42301 Kentucky,<br>California.
+            </address>
+        </div>
+    
+        <div class="footer-bottom" id="footer-bottom">
+            <p>&copy;www.g1technology.com || DESIGNED BY 1DIA1 GROUP 1</p>
+        </div>
+    <script>
+        const small =document.getElementById("small")
+        var code = document.getElementById("code")
+        var hoverme = document.getElementById("hoverme")
+        function zoomImg(){
+            small.style.height="450px";
+            small.style.boxShadow = "0px 0px 20px 10px aqua"
+            
+        }
+        function outImg(){
+            small.style.boxShadow = "none"
+            small.style.height="425px";
+                     
+        }
+    </script>
+    <script src="../template/searchbar.js"></script>
+    <script src="../template/temp.js"></script>
+</body>
+</html>

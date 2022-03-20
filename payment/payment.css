@@ -1,0 +1,89 @@
+fieldset{
+    background: #0087dc;
+	font-family: "Candara", sans-serif;
+	position: relative;
+	width: 620px;
+	margin: 70px auto;
+	border-radius: 10px;
+	opacity: 0.9;
+	text-align: center;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+fieldset input[type=text] {
+    outline: 0;
+	background: none;
+	font-size: 15px;
+	color:black;
+	text-align: center;
+	width: 200px;
+	padding: 15px;
+	box-sizing: border-box;
+	border: 2.5px solid black;
+	border-radius: 25px;
+	transition: 0.5s;
+	transition-property: width;
+}
+
+input[list] {
+    outline: 0;
+	background: none;
+	font-size: 15px;
+	color:black;
+	text-align: center;
+	width: 200px;
+	padding: 15px;
+	box-sizing: border-box;
+	border: 2.5px solid black;
+	border-radius: 25px;
+	transition: 0.5s;
+	transition-property: width;
+}
+
+fieldset input:hover{
+	width: 300px;
+  }
+  fieldset #payment:hover, fieldset #payment-type:hover{
+	width: 250px;
+  }
+  fieldset input:focus{
+	width: 300px;
+  }
+  fieldset #payment:focus, fieldset #payment-type:focus{
+	width: 250px;
+  }
+  fieldset input::placeholder{
+	  color: black;
+  }
+
+  fieldset button{
+	outline: 0;
+	background: none;
+	color: black;
+	font-size: 14px;
+	text-transform: uppercase;
+	width: 150px;
+	padding: 15px;
+	border: 2.5px solid black;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: 0.5s;
+	transition-property: background, transform;
+  }
+  
+  fieldset button:hover, fieldset button:active, fieldset button:focus{
+	background: #10AC84;
+	transform: scale(1.1);
+  }
+
+  fieldset #checkPromo{
+	  width: 100px;
+	  height: 30px;
+	  padding: 0px;
+  }
